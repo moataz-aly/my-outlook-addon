@@ -1,0 +1,62 @@
+<div class="main-container">
+	<header class="app-header">
+		<div class="logo-area">
+			<span class="sparkle">✨</span>
+			<h1 class="ms-fontWeight-semibold">Gemini Assistant</h1>
+		</div>
+		<div id="status" class="status-badge">Ready</div>
+	</header>
+
+	<div class="content-body">
+		<div class="card settings-card">
+			<div class="input-group">
+				<label>API Key</label>
+				<input type="password" id="apiKeyInput" placeholder="Enter AIzaSy...">
+            </div>
+				<div class="input-group">
+					<label>Writing Style</label>
+					<input type="text" id="styleInput" placeholder="e.g., Friendly CEO, helpful support...">
+            </div>
+				</div>
+
+				<div class="controls-grid">
+					<div class="card mini-card">
+						<label>Select Tone</label>
+						<select id="toneSelect">
+                    <option value="Professional">💼 Professional</option>
+                    <option value="Friendly">😊 Friendly</option>
+                    <option value="Direct">⚡ Direct</option>
+                    <option value="Apologetic">🙏 Apologetic</option>
+                </select>
+					</div>
+					<div class="card mini-card">
+						<label>Length: <span id="lengthLabel">Normal</span></label>
+						<input type="range" id="lengthSlider" min="1" max="3" value="2">
+            </div>
+					</div>
+
+					<div class="button-stack">
+						<button id="replyBtn" class="btn btn-success">
+                <span class="icon">📧</span> Suggest Reply
+            </button>
+						<button id="rewriteBtn" class="btn btn-primary">
+                <span class="icon">✍️</span> Polish Selection
+            </button>
+						<button id="arabicBtn" class="btn btn-purple">
+                <span class="icon">🇸🇦</span> Translate to Arabic
+            </button>
+						<div class="btn-row">
+							<button id="summarizeBtn" class="btn btn-outline">📝 Bullets</button>
+							<button id="shortenBtn" class="btn btn-outline">✂️ Shorten</button>
+						</div>
+					</div>
+
+					<div class="card custom-card">
+						<label>Ask anything else...</label>
+						<div class="search-box">
+							<input type="text" id="customPrompt" placeholder="e.g., Make it a poem...">
+							<button id="customBtn">Go</button>
+						</div>
+					</div>
+				</div>
+			</div>
